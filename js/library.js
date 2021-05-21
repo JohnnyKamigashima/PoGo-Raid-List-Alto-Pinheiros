@@ -16,48 +16,48 @@ function calc () {
   var texto =
     '*RAID BOSS* ' +
     boss +
-    \n +
+    '\n' +
     'Ginásio ' +
     gym +
-    \n +
-    \n +
+    '\n' +
+    '\n' +
     'Abre: ' +
     abre +
     'h' +
-    \n +
+    '\n' +
     '*BATER*: ' +
     bater +
     'h' +
-    \n +
-    \n +
+    '\n' +
+    '\n' +
     '*REMOTOS* (máx. 10):' +
-    \n +
-    \n +
+    '\n' +
+    '\n' +
     '1.' +
     Minhascontas +
-    \n +
+    '\n' +
     '2.' +
-    \n +
+    '\n' +
     '3.' +
-    \n +
+    '\n' +
     '4.' +
-    \n +
+    '\n' +
     '5.' +
-    \n +
+    '\n' +
     '6.' +
-    \n +
+    '\n' +
     '7.' +
-    \n +
+    '\n' +
     '8.' +
-    \n +
+    '\n' +
     '9.' +
-    \n +
+    '\n' +
     '10.' +
-    \n +
-    \n +
+    '\n' +
+    '\n' +
     '*PRESENCIAIS*:' +
-    \n +
-    \n +
+    '\n' +
+    '\n' +
     Listapresencial
 
   /* Get the text field */
