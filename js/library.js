@@ -4,12 +4,11 @@ function calc () {
   var gym = document.getElementById('gyms').value
   var boss = document.getElementById('bossN').value
   var Minhascontas = document.getElementById('playerN').value
-var remotos = $("input[type='radio']:checked").val();
+  var remotos = $("input[type='radio']:checked").val()
   var Listapresencial = document.getElementById('playerN').value
- 
-  if ((remotos == 'remoto')) {
-    Listapresencial = ''
 
+  if (remotos == 'remoto') {
+    Listapresencial = ''
   } else {
     Minhascontas = ''
   }
@@ -64,7 +63,7 @@ var remotos = $("input[type='radio']:checked").val();
   /* Get the text field */
   var copyText = texto
   //document.getElementById('result').innerHTML = texto
-  alert("Copiado!")
+  alert('Copiado!')
   copyToClipboard(copyText)
 
   return false
@@ -89,22 +88,20 @@ function currentTime () {
   var minuto = Number(now.getMinutes())
 
   document.getElementById('abreH').value =
-    hora +
-    ':' +
-    ((minuto < 10 ? '0' : '') + minuto) // Adiciona horario atual no horario de abertura
+    hora + ':' + ((minuto < 10 ? '0' : '') + minuto) // Adiciona horario atual no horario de abertura
 
-    if (minuto<50){    
+  if (minuto < 50) {
+    document.getElementById('bateH').value =
+      hora + ':' + ((minuto < 10 ? '0' : '') + (minuto + 10)) // Adiciona horario atual + 10 minutos}
+  } else {
+    if ((minuto - 50) < 10) {
       document.getElementById('bateH').value =
-    hora +
-    ':' +
-    ((minuto < 10 ? '0' : '') + (minuto+10)) // Adiciona horario atual + 10 minutos}
+        hora + 1 + ':' + ((minuto < 10 ? '0' : '') + '0' + (minuto - 50)) // Adiciona horario atual + 10 minutos}
+    } else {
+      document.getElementById('bateH').value =
+        hora + 1 + ':' + ((minuto < 10 ? '0' : '') + (minuto - 50)) // Adiciona horario atual + 10 minutos}
     }
-    else {
-      if (minuto-50 < 10){
-        document.getElementById('bateH').value = (hora+1) + ':' + ((minuto < 10 ? '0' : '') + "0" +(minuto-50)) // Adiciona horario atual + 10 minutos}
-      }
-      else document.getElementById('bateH').value = (hora+1) + ':' + ((minuto < 10 ? '0' : '') + (minuto-50)) // Adiciona horario atual + 10 minutos}
-    }
+  }
 
   return now
 }
