@@ -7,7 +7,7 @@ function calc () {
   var remotos = document.getElementById('remoto').value
   var Listapresencial = document.getElementById('playerN').value
 
-  if ((remotos = 'remoto')) {
+  if ((remotos = 'presencial')) {
     Minhascontas = ''
   } else {
     Listapresencial = ''

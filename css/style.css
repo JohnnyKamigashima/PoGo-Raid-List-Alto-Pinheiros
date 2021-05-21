@@ -10,13 +10,15 @@ body {
   background-color: #3498db;
   color: white;
   font-family: prompt;
+  font-size: xx-large;
   border: none;
   cursor: pointer;
 }
 
 #abreH,
 #bateH {
-  max-width: 50px;
+  max-width: 80px;
+  font-size: xx-large;
 }
 
 label {
@@ -34,15 +36,22 @@ header {
 
 input {
   width: 60%;
+  font-size: xx-large;
 }
 
 
 #gyms {
   width: 70%;
+  font-size: x-large;
 }
 
 input.radio {
-  width: 30px;
+ 
+    border: 0px;
+    width: 20%;
+    height: 1em;
+
+
 }
 
 .button {
