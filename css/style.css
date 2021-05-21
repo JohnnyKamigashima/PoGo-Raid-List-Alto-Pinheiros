@@ -7,6 +7,8 @@
   background: radial-gradient(circle, rgba(0,36,29,1) 0%, rgba(0,59,65,1) 54%, rgba(1,105,97,1) 100%);
   opacity: 0.8;
   background-image: url("../img/flor_de_alface.jpg");
+  background-repeat: no-repeat;
+
   color: black;
   margin: auto;
   padding: 30px;
