@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="./css/style.css" />
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Gerador de Lista</title>
+    <script src="./js/library.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div id="main">
+      <header>Gerador de Lista de Raid PoGo</header>
+      <form method="get" autocomplete="on">
+       
+        <p><label>Jogador:</label> <input type="text" id="playerN" name="playerN" /></p>
+                 
+         <p>   <div class="dropdown">
+          <label for="gyms">Escolha o ginásio:</label>
+          <select id="gyms" name="gyms">
+            <option value="Igreja da Benedito">Igreja da Benedito</option>
+            <option value="Arte Indígena">Arte Indígena</option>
+            <option value="Executive Tower">Executive Tower</option>
+            <option value="Alladin">Alladin</option>
+            <option value="Minhau">Minhau</option>
+            <option value="Sorriso Feliz">Sorriso Feliz</option>
+            <option value="Totem Caretas">Totem Caretas</option>
+            <option value="Flor de Alface">Flor de Alface</option>
+            <option value="Jesus de Braços abertos"
+              >Jesus de Braços abertos</option
+            >
+            <option value="Azulejo Português">Azulejo Português</option>
+            <option value="Rosas de Sauron">Rosas de Sauron</option>
+            <option value="Colorful Grafitti">Colorful Grafitti</option>
+            <option value="Timbalada">Timbalada</option>
+            <option value="Fumante Amarelo">Fumante Amarelo</option>
+            <option value="Metrô Sumaré">Metrô Sumaré</option>
+            <option value="Dragão da My ID">Dragão da My ID</option>
+            <option value="Túmulo de São Jorge">Túmulo de São Jorge</option>
+            <option value="Grafitti Art">Grafitti Art</option>
+            <option value="Grafite da Banca">Grafite da Banca</option>
+            <option value="Crochê de Passarinho">Crochê de Passarinho</option>
+            <option value="Espaço Paulista de Arte"
+              >Espaço Paulista de Arte</option
+            >
+            <option value="Galeria de Arte Urbana"
+              >Galeria de Arte Urbana</option
+            >
+            <option value="Anjo Hangloose">Anjo Hangloose</option>
+            <option value="Maior estátua do Cemitério"
+              >Maior estátua do Cemitério</option
+            >
+          </select>
+        </div></p>
+<p>        <label>Boss: </label><input type="text" id="bossN" name="bossN" />
+</p>
+<p>        <label> Horário de abertura:</label> <input type="text" id="abreH" name="abreH" /> horas</p>
+        <p><label> Horário de bater: </label><input type="text" id="bateH" name="bateH" /> horas</p>
+        
+          <p><input
+            type="radio"
+            id="remoto"
+            name="presencial"
+            value="presencial"
+            class="radio"
+          />
+          <label for="remoto">Presencial</label>
+          <input
+            type="radio"
+            id="remoto"
+            name="presencial"
+            value="remoto"
+            checked="checked"
+            class="radio"
+          />
+          <label for="remoto">Remoto</label>
+          </p>
+
+        <p><input type="button" onClick="calc()" value="Copiar" class="button" /></p>
+      </form>
+    </div>
+    <script>
+      $('#abreH').keyup(function () {$('#bateH').val(this.value)})
+      currentTime()
+      sort('gyms')
+    </script>
+    <div id="result"></div>
+  </body>
+</html>
