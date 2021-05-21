@@ -16,48 +16,48 @@ function calc () {
   var texto =
     '*RAID BOSS* ' +
     boss +
-    '<br>' +
+    \n +
     'Ginásio ' +
     gym +
-    '<br>' +
-    '<br>' +
+    \n +
+    \n +
     'Abre: ' +
     abre +
     'h' +
-    '<br>' +
+    \n +
     '*BATER*: ' +
     bater +
     'h' +
-    '<br>' +
-    '<br>' +
+    \n +
+    \n +
     '*REMOTOS* (máx. 10):' +
-    '<br>' +
-    '<br>' +
+    \n +
+    \n +
     '1.' +
     Minhascontas +
-    '<br>' +
+    \n +
     '2.' +
-    '<br>' +
+    \n +
     '3.' +
-    '<br>' +
+    \n +
     '4.' +
-    '<br>' +
+    \n +
     '5.' +
-    '<br>' +
+    \n +
     '6.' +
-    '<br>' +
+    \n +
     '7.' +
-    '<br>' +
+    \n +
     '8.' +
-    '<br>' +
+    \n +
     '9.' +
-    '<br>' +
+    \n +
     '10.' +
-    '<br>' +
-    '<br>' +
+    \n +
+    \n +
     '*PRESENCIAIS*:' +
-    '<br>' +
-    '<br>' +
+    \n +
+    \n +
     Listapresencial
 
   /* Get the text field */
@@ -102,7 +102,7 @@ function currentTime () {
       document.getElementById('bateH').value =
       (hora+1) +
       ':' +
-      ((minuto < 10 ? '0' : '') + "0" + (minuto-50)) // Adiciona horario atual + 10 minutos}
+      ((minuto < 10 ? '0' : '') + "0" +(minuto-50)) // Adiciona horario atual + 10 minutos}
     }
 
   return now
