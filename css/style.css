@@ -1,65 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt&display=swap');
 
 #main {
-  background-color: black;
+  background: rgb(0,36,29);
+  background: radial-gradient(circle, rgba(0,36,29,1) 0%, rgba(0,59,65,1) 54%, rgba(1,105,97,1) 100%);
+  color: black;
   margin: auto;
-  padding: 20px;
+  padding: 30px;
+  font-size: large;
 }
 
 body {
-  background-color: #3498db;
   color: white;
   font-family: prompt;
-  font-size: xx-large;
   border: none;
   cursor: pointer;
 }
 
-#abreH,
-#bateH {
-  max-width: 80px;
-  font-size: xx-large;
+select {
+  width:97%;
+  font-size: medium;
 }
-
-label {
-  width: 150px;
-}
-
 header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 2em;
+  font-size: xx-large;
   margin: auto;
   text-align: center;
   color: aquamarine;
   padding-bottom: 50px;
 }
+#abreH, #bateH {
+  width: 150px
+  }
 
 input {
-  width: 60%;
-  font-size: xx-large;
+  width: 97%
 }
 
+#horas {
 
-#gyms {
-  width: 70%;
-  font-size: x-large;
+  padding-left: 5px;
 }
 
+.radios {
+  width: 50%;
+  display: inline-block;
+  float: left;
+
+}
+
+label{
+
+  color: azure;
+
+
+
+  clear: none;
+  display: block;
+}
 input.radio {
- 
-    border: 0px;
-    width: 20%;
-    height: 1em;
-
-
+  height: 25px;
+  width: 25px;
+  display: inline-block;
+  padding-right: 10px;
 }
 
 .button {
   background-color: rgb(40, 53, 87);
   color: aliceblue;
   border-radius: 15px;
-  font-size: 2em;
-  margin-top: 15px;
+   margin-top: 15px;
   resize: horizontal;
   overflow: auto;
   min-width: 50px; /*suggest a min-width &amp; min-height*/

@@ -4,13 +4,14 @@ function calc () {
   var gym = document.getElementById('gyms').value
   var boss = document.getElementById('bossN').value
   var Minhascontas = document.getElementById('playerN').value
-  var remotos = document.getElementById('remoto').value
+var remotos = $("input[type='radio']:checked").val();
   var Listapresencial = document.getElementById('playerN').value
-
-  if ((remotos = 'presencial')) {
-    Minhascontas = ''
-  } else {
+ 
+  if ((remotos == 'remoto')) {
     Listapresencial = ''
+
+  } else {
+    Minhascontas = ''
   }
 
   var texto =
@@ -33,7 +34,7 @@ function calc () {
     '*REMOTOS* (máx. 10):' +
     '\n' +
     '\n' +
-    '1.' +
+    '1. ' +
     Minhascontas +
     '\n' +
     '2.' +
@@ -62,8 +63,8 @@ function calc () {
 
   /* Get the text field */
   var copyText = texto
-  document.getElementById('result').innerHTML = texto
-
+  //document.getElementById('result').innerHTML = texto
+  alert("Copiado!")
   copyToClipboard(copyText)
 
   return false
@@ -99,10 +100,10 @@ function currentTime () {
     ((minuto < 10 ? '0' : '') + (minuto+10)) // Adiciona horario atual + 10 minutos}
     }
     else {
-      document.getElementById('bateH').value =
-      (hora+1) +
-      ':' +
-      ((minuto < 10 ? '0' : '') + "0" +(minuto-50)) // Adiciona horario atual + 10 minutos}
+      if (minuto-50 < 10){
+        document.getElementById('bateH').value = (hora+1) + ':' + ((minuto < 10 ? '0' : '') + "0" +(minuto-50)) // Adiciona horario atual + 10 minutos}
+      }
+      else document.getElementById('bateH').value = (hora+1) + ':' + ((minuto < 10 ? '0' : '') + (minuto-50)) // Adiciona horario atual + 10 minutos}
     }
 
   return now
