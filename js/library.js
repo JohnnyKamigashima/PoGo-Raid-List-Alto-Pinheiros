@@ -1,7 +1,7 @@
-function calc () {
+function calc() {
   var abre = document.getElementById('abreH').value
   var bater = document.getElementById('bateH').value
-  var gym = document.getElementById('gyms').value
+  var gym = document.getElementById('result').value
   var boss = document.getElementById('bossN').value
   var Minhascontas = document.getElementById('playerN').value
   var remotos = $("input[type='radio']:checked").val()
@@ -69,7 +69,7 @@ function calc () {
   return false
 }
 
-function copyToClipboard (text) {
+function copyToClipboard(text) {
   var dummy = document.createElement('textarea')
   // to avoid breaking orgain page when copying more words
   // cant copy when adding below this code
@@ -82,7 +82,7 @@ function copyToClipboard (text) {
   document.body.removeChild(dummy)
 }
 
-function currentTime () {
+function currentTime() {
   var now = new Date()
   var hora = Number(now.getHours())
   var minuto = Number(now.getMinutes())
@@ -106,7 +106,8 @@ function currentTime () {
   return now
 }
 
-function sort (elementid) {
+
+function sort(elementid) {
   // WARN: won't handle OPTGROUPs!
   var sel = document.getElementById(elementid)
   // convert OPTIONs NodeList to an Array
@@ -133,4 +134,36 @@ function sort (elementid) {
   for (var i = 0, len = ary.length; i < len; i++) sel.remove(ary[i].index)
   // (re)add re-ordered OPTIONs to SELECT
   for (var i = 0, len = ary.length; i < len; i++) sel.add(ary[i], null)
+}
+
+function sortList(elementid) {
+  var list, i, switching, b, shouldSwitch;
+  list = document.getElementById(elementid);
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    b = list.getElementsByTagName("LI");
+    // Loop through all list items:
+    for (i = 0; i < (b.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Check if the next item should
+      switch place with the current item: */
+      if (b[i].innerHTML.toLowerCase() > b[i + 1].innerHTML.toLowerCase()) {
+        /* If next item is alphabetically lower than current item,
+        mark as a switch and break the loop: */
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark the switch as done: */
+      b[i].parentNode.insertBefore(b[i + 1], b[i]);
+      switching = true;
+    }
+  }
 }

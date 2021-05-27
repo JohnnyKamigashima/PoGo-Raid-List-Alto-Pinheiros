@@ -1,1 +1,296 @@
-*RAID BOSS* Giratina<br>Ginásio Igreja da Benedito<br><br>Abre: 9:30hNaN*BATER*: 9:30h<br><br>*REMOTOS* (máx. 10):<br><br><br>4.<br>5.<br>6.<br>7.<br>8.<br>9.<br>10.<br><br>*PRESENCIAIS*:<br><br>
+ <!-- 
+                  <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="https://lh3.googleusercontent.com/q0N6rnFvmSoVsKkpWEz2_K-4sLUQBSHUU9hr0_yvJUs4AbQutHs9yAFdqt2Rs0Aw804etUO3VvfdjmhEIcU3GdaSrRxG=s130"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li>
+
+                <li>
+                  <a href="#">
+                    Flor de Alface
+                    <img class="fotoGym"
+                      src="XXXX"
+                      alt="">
+                    <span class="value">Flor de Alface
+                    </span>
+                  </a>
+                </li> -->
+              </ul>
+            </dd>
+          </dl>
+          <input type="hidden" id="result"></span>
+          <!-- <p><select id="gyms" name="gyms">
+              <option value="Igreja da Benedito">Igreja da Benedito</option>
+              <option value="Arte Indígena">Arte Indígena</option>
+              <option value="Executive Tower">Executive Tower</option>
+              <option value="Alladin">Alladin</option>
+              <option value="Minhau">Minhau</option>
+              <option value="Sorriso Feliz">Sorriso Feliz</option>
+              <option value="Totem Caretas">Totem Caretas</option>
+              <option value="Flor de Alface"><a href="#">Flor de Alface <img class="flag"
+                    src="https://lh3.googleusercontent.com/q0N6rnFvmSoVsKkpWEz2_K-4sLUQBSHUU9hr0_yvJUs4AbQutHs9yAFdqt2Rs0Aw804etUO3VvfdjmhEIcU3GdaSrRxG=s130"
+                    alt=""></a></option>
+              <option value="Jesus de Braços abertos">Jesus de Braços abertos</option>
+              <option value="Azulejo Português">Azulejo Português</option>
+              <option value="Rosas de Sauron">Rosas de Sauron</option>
+              <option value="Colorful Grafitti">Colorful Grafitti</option>
+              <option value="Timbalada">Timbalada</option>
+              <option value="Fumante Amarelo">Fumante Amarelo</option>
+              <option value="Metrô Sumaré">Metrô Sumaré</option>
+              <option value="Dragão da My ID">Dragão da My ID</option>
+              <option value="Túmulo de São Jorge">Túmulo de São Jorge</option>
+              <option value="Grafitti Art">Grafitti Art</option>
+              <option value="Grafite da Banca">Grafite da Banca</option>
+              <option value="Crochê de Passarinho">Crochê de Passarinho</option>
+              <option value="Espaço Paulista de Arte">Espaço Paulista de Arte</option>
+              <option value="Galeria de Arte Urbana">Galeria de Arte Urbana</option>
+              <option value="Anjo Hangloose">Anjo Hangloose</option>
+              <option value="Maior estátua do Cemitério">Maior estátua do Cemitério</option>
+            </select> -->

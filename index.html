@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="./css/style.css" />
-    <script src="./js/library.js"></script>
+<script src="./js/library.js"></script>
 
-    <!-- Latest compiled and minified CSS -->
+<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 
 <!-- jQuery library -->
@@ -10,86 +10,154 @@
 
 <!-- Latest compiled JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 <html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
-    <title>Gerador de Lista</title>
 
-  </head>
-  <body>
-    <div id="main" class="container-fluid">
-      <header>Gerador de Lista de Raid PoGo</header>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8" />
+  <title>
+    Gerador de Lista
+  </title>
+</head>
+
+<body>
+  <div id="main" class="container-md">
+    <header>Gerador de Lista de Raid PoGo</header>
+    <div class="formulario">
       <form method="get" autocomplete="on" name="formulario">
-       
-        <p><label>Jogador:</label></p>
-        <p><input type="text" id="playerN" name="playerN" /></p><br>
-                 
-         <p><div class="dropdown"><label for="gyms">Ginásio:</label></p>
-          <p><select id="gyms" name="gyms">
-            <option value="Igreja da Benedito">Igreja da Benedito</option>
-            <option value="Arte Indígena">Arte Indígena</option>
-            <option value="Executive Tower">Executive Tower</option>
-            <option value="Alladin">Alladin</option>
-            <option value="Minhau">Minhau</option>
-            <option value="Sorriso Feliz">Sorriso Feliz</option>
-            <option value="Totem Caretas">Totem Caretas</option>
-            <option value="Flor de Alface">Flor de Alface</option>
-            <option value="Jesus de Braços abertos"
-              >Jesus de Braços abertos</option
-            >
-            <option value="Azulejo Português">Azulejo Português</option>
-            <option value="Rosas de Sauron">Rosas de Sauron</option>
-            <option value="Colorful Grafitti">Colorful Grafitti</option>
-            <option value="Timbalada">Timbalada</option>
-            <option value="Fumante Amarelo">Fumante Amarelo</option>
-            <option value="Metrô Sumaré">Metrô Sumaré</option>
-            <option value="Dragão da My ID">Dragão da My ID</option>
-            <option value="Túmulo de São Jorge">Túmulo de São Jorge</option>
-            <option value="Grafitti Art">Grafitti Art</option>
-            <option value="Grafite da Banca">Grafite da Banca</option>
-            <option value="Crochê de Passarinho">Crochê de Passarinho</option>
-            <option value="Espaço Paulista de Arte"
-              >Espaço Paulista de Arte</option
-            >
-            <option value="Galeria de Arte Urbana"
-              >Galeria de Arte Urbana</option
-            >
-            <option value="Anjo Hangloose">Anjo Hangloose</option>
-            <option value="Maior estátua do Cemitério"
-              >Maior estátua do Cemitério</option
-            >
-          </select>
-        </div></p><br>
-      <p><label>Boss: </label></p>
-      <p><input type="text" id="bossN" name="bossN" /></p><br>
-      <p><label>Horário de abertura:</label></p>
-      <p><input type="text" id="abreH" name="abreH" /> <label id="horas"> horas</label></p><br>
-      <p><label>Horário de bater: </label></p>
-      <p><input type="text" id="bateH" name="bateH" /> <label id="horas">horas</label></p><br>
+        <div class="entradas">
+          <label>
+            Jogador:
+          </label>
+          <input type="text" id="playerN" name="playerN" />
+        </div>
+        <div class="droplist">
+          <dl id="sample" class="dropdown">
+            <dt>
+              <a href="#">
+                <span id="titGym">
+                  Ginásio:
+                </span>
+              </a>
+            </dt>
+            <dd>
+              <ul id="listadeGym">
 
-       
-          <p> 
-            <div class="radios">
-            <label>
-              <input type="radio"  name="remoto" value="presencial" class="radio"/>  Presencial 
-            </label>
-            </div>
-          <div class="radios">
-            <label>
-            <input  type="radio"    name="remoto" value="remoto" class="radio" checked="checked"/>  Remoto
+                <script>
+                  createmyList("Flor de Alface", "https://lh3.googleusercontent.com/q0N6rnFvmSoVsKkpWEz2_K-4sLUQBSHUU9hr0_yvJUs4AbQutHs9yAFdqt2Rs0Aw804etUO3VvfdjmhEIcU3GdaSrRxG=s130")
+                  createmyList("Igreja Arcoverde", "https://lh3.googleusercontent.com/8jC-tbGrkUNPWP4ssimMbIZxQoBftPd-mV9a1tScWZhZ9-nRWckrDNE_otFAXpi6vgLDQVB-OWhLLuYN93yvDny3Beo=s130")
+                  createmyList("Totem Caretas", "https://lh3.googleusercontent.com/imukLJRBYR1xwsEoK3RSGPR42NmWtMjpdE7aiNblm_mtnUFcF_whPwfZxUP09G20RjaPOhhoti6IzEUcMeO63J5iYw=s130")
+                  createmyList("Minhau", "https://lh3.googleusercontent.com/XhM_SionMRLpuQW8pU2-GJkdtCZFjWjdQNDISVxUtHp1PnWMsz4T_5RBBcSE8tFeUzDVYdp1zm_k9YI3jkFqVJQRVg=s130")
+                  createmyList("Alladin", "https://lh3.googleusercontent.com/lAfFLAH-gzx9aSvmJq8UC7kRSXHs09hSQrgtiCQDUl2BF7CJk-mrLyl_NwBolpwbNE67byzw6Eb4ScE3sPrWwgbiIHEC=s130")
+                  createmyList("Sorriso Feliz", "https://lh3.googleusercontent.com/fIN9W4inhd9UJZkeLmpfNdXTM10EtpaZ2D2kVfucoptDEW0P7sRW_AvWcPcBFLSP-Q9vpk0jaIJh6Xe4ebG3W5jDFvU=s130")
+                  createmyList("Azulejo Português Antigo", "https://lh3.googleusercontent.com/7gAIBREU097EzqCzyNU62vawCce22VzfzMxW8nUCh5Yo731Gzk9e3zos7FcLSM5P77pAcmisygo9gB3Lqubge6lF4tM=s130")
+                  createmyList("Metrô Sumaré", "https://lh3.googleusercontent.com/mF9_NJe-pfw2xDYLZZhSFTlDhhNSoiYKb7_XaoinN7Flvdh6AfDvkByq_-X8c1aiaCrptHYgiLQCcxWdRRcXr_vILg=s130")
+                  createmyList("Mapa Mundi", "https://lh3.googleusercontent.com/X1vJLXcphyqV26dlihGtrqK4hvZKYkxS6ddCvasz18G7P4MXXk2PLPZzi_c6E4CPbywxyPCPn2WP4oe5rvWBuVCXLQ=s130")
+                  createmyList("Jesus de braços abertos", "https://lh3.googleusercontent.com/F4-HJkqk_Dgr78gFdow2qhs1ESTIAq6a_V0cCZfFNF9M-9lKEjWcT-HvwNfsEVGocmO3F6kex783O628XqsoP9q7aCs=s130")
+                  createmyList("Maior estátua do cemitério", "https://lh3.googleusercontent.com/TUf1iq86Bce7SX4wfscay10Kbc_vXXaaZE3rVyAGdODKSqxeHABYRDfs_SQ0J9RUvhX-9Zfae4BJHij5O0Plt23rnn8=s130")
+                  createmyList("Metrô Clínicas", "https://lh3.googleusercontent.com/0pHZvyzUphc4ldojEMYK0-5-4Uze2ZSW5HYuhujn0Kqs698A_YkdlKVvHBaJn7i5BbKjplWh52r7sWj2msUtrOnA4JPU=s130")
+                  createmyList("Anjo Hang loose", "https://lh3.googleusercontent.com/B4SEXJrYHt5jtjxTEeE9ZUhcjOMKH3J2BnqlCe5HgBr94ADQUIQiEBwuDDoy7pZlEPO-SVvf55oiOPyDWNQ0C9m-eas=s130")
+                  createmyList("Grafitti da banca", "https://lh3.googleusercontent.com/yd04w3r0cQvJ1MeTBNScE2j7RQHAz35VSjG5YS3fBd9xzYs1HDNDIA1BPVCbmRQVtWlqj8GFU77gAWh_AB2sDdNtqR9i=s130")
+                  createmyList("Fonte Do Instituto de Psiquiatria Do HCFMUSP", "https://lh3.googleusercontent.com/vLp3D7syv155n1WMPgQlleWnVvbdmP8EdD0sVVWhjla2Y-UBWzIfIZZocxom3pLCYzWcyjb22jF3unfdOj39n0oOqIA=s130")
+                  createmyList("Baiuca Oscar Freire", "https://lh3.googleusercontent.com/m2cR2m7QispOkvQ1vvNUJIIuk-VAOsFoB2Jm-O0w1xBqyd3HxfQ_aPhFy160n_Ub9k5DwUyVsHjhPkKkl8ST4xKrvuo=s130")
+                  createmyList("Mural do ônibus velho", "https://lh3.googleusercontent.com/zFQZKweGPK6NUURqvzx2DQVfiBscBiSxp19YeN4RWgthQcEOvXAQ7PajQ0Ct_QHoz-hEJsIjSDdz78k_onwZurRGgqc=s130")
+                  createmyList("Resistence Sp HQ", "https://lh3.googleusercontent.com/rNF6t5ox7bWoYV_f8K7jqw8yH2w_BIMHSwyExbAchRL5pfeemXp7k9U4qXxrlydNAyiooYGzPvtwSzpLPxr_nEi6_Bo=s130")
+                  createmyList("Flores Internas do McDonalds", "https://lh3.googleusercontent.com/yuFHDYs1eyCKUPa8I1Bde8OcwwOzS43emy4jpMA01kiDNGWvkmaMql3BbT0uXEYwg6ki_dv1fLjE6CFh4BH_sWKKB1Y=s130")
+                  createmyList("Arte indígena nas ruas", "https://lh3.googleusercontent.com/qZ1tTv_rwYSWS-n60jfOc8BgGKe-r2idIximuljfDgjofsvmITQsoCW0xQBKJGOeT6AEi54hEw6Y_tO2WFd-h21682w=s130")
+                  createmyList("Espaço Paulista de arte", "https://lh3.googleusercontent.com/DEj4sIKLlDLdObebRF5eSzsoyeam-P8cqI188-ArVfnTSyi0BBFraHy7ecTywTEqdNb2DTGmEaDSk6orrSACUar86A=s130")
+                  createmyList("Executive Tower", "https://lh3.googleusercontent.com/Bxx9jnHI-6ZoelEPQg-2Kf5w0I0Ue_27ja3yOkhv68Tt_-zpjdaE5X9kgFlS5OtgSFYPSAIp5wr52K_Syw3kGIJkRcI=s130")
+                  createmyList("Crochê do passarinho", "https://lh3.googleusercontent.com/HPvm7ly80nCBWaar9KQ0DpdKuNw55_g7iHF8J45Ny0Ce5aasc7SwL0LFp1-yIfAcX_RYvRbxRxhifR0mHdow6Jl9hg=s130")
+                  createmyList("Rosas de Sauron", "https://lh3.googleusercontent.com/hi42rpNMI01ObOwbrFCMptFKMnLs_qY8S-AgSIz1lJnvkv04YskDV-dDtXJ7uBOErPVjERU70VS4bJoe4W4PtsoM6w=s130")
+                  createmyList("Túmulo do São Jorge", "https://lh3.googleusercontent.com/AsUI92UGJYe3DPjIItvjEe5UqdL03WJAJJZwQekvylGOp11nPLcQdu2e2f0g5AGiuimrqO0o47qs9Rfw4QkhRTAIIw=s130")
+                  createmyList("Grafitti Art", "https://lh3.googleusercontent.com/FgFAz8bbLYfekEj8f_2CsS3ZaHlO3RMuBT4xR8CGFhMHbMwyxpYpEF4_FLnNU_1fs6-cG-d4Ds-3xZOmv-Vha050VSI=s130")
+                  createmyList("Fumante Amarelo", "https://lh3.googleusercontent.com/-5R0ijadwjTtoD9N6XudPaRi4DlsojsL11ATcaxM1dEWf5PLw4BrTwrXqW-hw_oHP3B_VlLunEtbe2NrtRh-TCn6esw=s130")
+                  createmyList("Colorful Grafitti", "https://lh3.googleusercontent.com/nDGN9aJS-ImKbR1TeAn9H1kFTslayfyDTJJGSaIp80JOT4SgCsozJ46mxogR97JSrCEE-j3zdJwvheAZurrpK0xs6_8=s130")
+                  createmyList("Timbalada", "https://lh3.googleusercontent.com/2CNCIYQDYNcnkLvGxAY0iXwVu94hLh0DpbV5WxKC3o1rUA7PbsSkx-zwLWKn3tRdmjmEPKOmekyNsCzghhSfqLik8nb4=s130")
+                  createmyList("Galeria de arte urbana", "https://lh3.googleusercontent.com/Ne5gPfWiZu31e9hFw8GdNmFWpYQXmegbvhteEDY19Jv4DmUAx6h_eu3q0vYF0AkR_Rbv7GlK7g5K0n9XqR2kkoU-GLYG=s130")
+                  //createmyList("xxx", "xxx")
+
+                  function createmyList(item, url) {
+                    let Deshtml = '<li><a href="#">' + item + '<img class="fotoGym"src="' + url + '" alt="" /><span class="values">' + item + '</span></a></li>';
+                    document.write(Deshtml);
+                    console.log(Deshtml);
+                    return true;
+                  }
+                </script>
+
+              </ul>
+            </dd>
+          </dl>
+
+        </div>
+        <input type="hidden" id="result" name="result" />
+
+        <div class="entradas">
+          <label>Boss: </label>
+          <input type="text" id="bossN" name="bossN" />
+        </div>
+        <div class="entradas">
+          <label>Horário de abertura:</label>
+          <input type="text" id="abreH" name="abreH" />
+          <label id="horas">horas</label>
+        </div>
+        <div class="entradas">
+          <label>Horário de bater: </label>
+          <input type="text" id="bateH" name="bateH" />
+          <label id="horas">horas</label>
+        </div>
+        <div class="radios">
+
+          <input type="radio" name="remoto" value="presencial" class="radio" id="presencial" />
+          <label for="presencial">
+            Presencial
           </label>
         </div>
-        </p><br>
-
-          <p><input type="button" onClick="calc()" value="Copiar" class="button" /></p>
-        
+        <div class="radios">
+          <input type="radio" name="remoto" value="remoto" class="radio" checked="checked" id="remoto" />
+          <label for="remoto">
+            Remoto
+          </label>
+        </div>
+        <div class="botao">
+          <input type="button" onClick="calc()" value="Copiar" class="button" />
+        </div>
       </form>
     </div>
-    <script>
-      $('#abreH').keyup(function () {$('#bateH').val(this.value)})
-      currentTime()
-      sort('gyms')
-    </script>
-    <div id="result"></div>
-  </body>
+  </div>
+
+  <script>
+    $('#abreH').keyup(function () { $('#bateH').val(this.value) })
+    currentTime()
+    sortList('listadeGym')
+
+    $(".dropdown img.fotoGym").addClass("flagvisibility");
+    $(".dropdown dt a").click(function () {
+      $(".dropdown dd ul").toggle();
+    });
+
+    $(".dropdown dd ul li a").click(function () {
+      var text = $(this).html();
+      $(".dropdown dt a span").html(text);
+      console.log(text)
+      $(".dropdown dd ul").hide();
+      $("#result").val(getSelectedValue("sample"));
+    });
+
+    function getSelectedValue(id) {
+      return $("#" + id).find("dt a span.values").html();
+      
+    }
+
+    $(document).bind('click', function (e) {
+      var $clicked = $(e.target);
+      if (!$clicked.parents().hasClass("dropdown"))
+        $(".dropdown dd ul").hide();
+    });
+
+    $(".dropdown img.fotoGym").toggleClass("flagvisibility");
+
+  </script>
+
+</body>
+
 </html>
