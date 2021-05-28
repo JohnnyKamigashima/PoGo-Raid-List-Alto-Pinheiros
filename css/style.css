@@ -39,11 +39,13 @@ header {
 }
 
 #abreH, #bateH {
-  width: 80px
+  width: 80px;
+  padding-left: 5px;
   }
 
 div.entradas{
   padding: 5px;
+  width: 100%;
 }
 
 .bossB {
@@ -51,19 +53,35 @@ div.entradas{
   padding: 0%;
 }
 
+#bossN {
+  padding-left: 5px;
+}
 
 div.radios {
   width: 50%;
   position: relative;
   float: left;
-  padding: 5px;
+  text-align: left;
+}
+
+.radio {
+  width: 15px;
+  height: 15px;
+  float: left;
+  clear: none;
+  margin-right: 5px;
+  margin-left: 5px;
   display: inline-block;
+  position: relative;
+}
+
+.radioLabel {
+  margin-left: 5px;
 }
 
 label{
   color: azure;
   clear: none;
-
   position: relative;
 }
 
@@ -90,12 +108,6 @@ input{
   padding-left: 5px;
 }
 
-input.radio {
-  display: inline-flex;
-  position: relative;
-  margin: 4px;
-}
-
 .button {
   background-color: rgb(40, 53, 87);
   color: aliceblue;
@@ -107,6 +119,9 @@ input.radio {
   min-height: 50px;
   width: 100%;
   height: 80px;
+  position: fixed;
+left: 0%;
+  bottom: 0%;
 }
 
 .listadeGym {
