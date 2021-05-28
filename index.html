@@ -86,17 +86,33 @@
                     return true;
                   }
                 </script>
-
               </ul>
             </dd>
           </dl>
-
         </div>
-        <input type="hidden" id="result" name="result" />
-
         <div class="entradas">
-          <label>Boss: </label>
-          <input type="text" id="bossN" name="bossN" />
+          <div class="bossB">
+            <label>Boss: </label>
+            <select name="tier1" id="tier1">
+              <option value="Alolan Vulpix">Tier 1 - Alolan Vulpix</option>
+              <option value="Eevee">Tier 1 - Eevee</option>
+              <option value="Galarian Zigzagoon">Tier 1 - Galarian Zigzagoon</option>
+              <option value="Espurr">Tier 1 - Espurr</option>
+
+              <option value="Vaporeon">Tier 3 - Vaporeon</option>
+              <option value="Jolteon">Tier 3 - Jolteon</option>
+              <option value="Espeon">Tier 3 - Espeon</option>
+              <option value="Umbreon">Tier 3 - Umbreon</option>
+              <option value="Flareon">Tier 3 - Flareon</option>
+
+              <option value="Yvetal">Tier 5 - Yvetal</option>
+
+              <option value="Mega Ampharos">Mega - Ampharos</option>
+              <option value="Mega Houndoom">Mega - Houndoom</option>
+              <option value="Mega Altaria">Mega - Altaria</option>
+            </select>
+            <input type="text" id="bossN" name="bossN" />
+          </div>
         </div>
         <div class="entradas">
           <label>Abre:</label>
@@ -124,14 +140,16 @@
         <div class="botao">
           <input type="button" onClick="calc()" value="Copiar" class="button" />
         </div>
+        <input type="hidden" id="result" name="result" />
       </form>
     </div>
   </div>
 
   <script>
     $('#abreH').keyup(function () { $('#bateH').val(this.value) })
-    currentTime()
-    sortList('listadeGym')
+    currentTime();
+    sortList('listadeGym');
+    sort('tier1');
 
     $(".dropdown img.fotoGym").addClass("flagvisibility");
     $(".dropdown dt a").click(function () {
@@ -158,6 +176,20 @@
     });
 
     $(".dropdown img.fotoGym").toggleClass("flagvisibility");
+
+    $("#tier1").change(function() {
+    $('#bossN').val($('option:selected').attr('value'));
+
+    // $("#tier3").change(function() {
+    // $('#bossN').val($('option:selected').attr('value'));
+
+    // $("#tier5").change(function() {
+    // $('#bossN').val($('option:selected').attr('value'));
+
+    // $("#tierM").change(function() {
+    // $('#bossN').val($('option:selected').attr('value'));
+
+}).change();
 
   </script>
 
