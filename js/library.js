@@ -94,7 +94,7 @@ function currentTime() {
     document.getElementById('bateH').value =
       hora + ':' + ((minuto < 10 ? '0' : '') + (minuto + 10)) // Adiciona horario atual + 10 minutos}
   } else {
-    if ((minuto - 50) < 10) {
+    if (String(minuto - 50).length < 2) {
       document.getElementById('bateH').value =
         hora + 1 + ':' + ((minuto < 10 ? '0' : '') + '0' + (minuto - 50)) // Adiciona horario atual + 10 minutos}
     } else {
