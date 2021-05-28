@@ -5,14 +5,17 @@
   max-width: 512px;
   opacity: 0.8;
   background-image: url("../img/flor_de_alface.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-repeat:repeat;
+  background-size:cover;
   color: black;
   padding: 30px;
   font-size: large;
   color: black;
   text-shadow: 2px 2px 5px #000000;
   margin: auto;
+  border: 3px solid #000000;
+  border-collapse: collapse;
+  border-radius: 5%;
 }
 
 body {
@@ -20,7 +23,8 @@ body {
   font-family: prompt;
   border: none;
   cursor: pointer;
-  background-color: #000000;
+  background: rgb(0,36,29);
+  background: radial-gradient(circle, rgba(0,36,29,1) 0%, rgb(0, 17, 19) 54%, rgb(0, 17, 16) 100%);
 }
 
 select {
