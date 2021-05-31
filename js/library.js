@@ -4,10 +4,12 @@ function calc() {
   var gym = document.getElementById('result').value
   var boss = document.getElementById('bossN').value
   var Minhascontas = document.getElementById('playerN').value
-  var remotos = $("input[type='radio']:checked").val()
+  var remotos = document.querySelector("input[name='remoto']:checked");
+  console.log(remotos.value);
+
   var Listapresencial = document.getElementById('playerN').value
 
-  if (remotos == 'remoto') {
+  if (remotos.value == 'remoto') {
     Listapresencial = ''
   } else {
     Minhascontas = ''

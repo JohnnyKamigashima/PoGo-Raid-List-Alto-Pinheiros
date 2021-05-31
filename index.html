@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="./css/style.css" />
 <script src="./js/library.js"></script>
-
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+  integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 
 <!-- Clocklet links -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/clocklet/css/clocklet.min.css">
@@ -25,21 +26,30 @@
 
 <body>
   <div id="main" class="container-md">
-    <header>Gerador de Lista de Raid PoGo - Alto Pinheiros</header>
+    <header>
+      Gerador de Lista de Raid <br>
+      PoGo - Alto Pinheiros
+    </header>
+    <br>
     <div class="formulario">
       <form method="get" autocomplete="on" name="formulario">
-        <div class="entradas">
-          <label>
-            Jogador:
-          </label>
-          <input type="text" id="playerN" name="playerN" />
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">
+              Jogador:
+            </span>
+          </div>
+          <input type="text" class="form-control" id="playerN" name="playerN" placeholder="Seu nome no jogo"
+            label="Username" aria-describedby="basic-addon1">
         </div>
+
         <div class="droplist">
           <dl id="sample" class="dropdown">
             <dt>
               <a href="#">
                 <span id="titGym">
-                  Ginásio:
+                  Escolha o Ginásio:
                 </span>
               </a>
             </dt>
@@ -82,7 +92,7 @@
                   function createmyList(item, url) {
                     let Deshtml = '<li><a href="#">' + item + '<img class="fotoGym"src="' + url + '" alt="" /><span class="values">' + item + '</span></a></li>';
                     document.write(Deshtml);
-                    console.log(Deshtml);
+
                     return true;
                   }
                 </script>
@@ -90,54 +100,78 @@
             </dd>
           </dl>
         </div>
-        <div class="entradas">
-          <div class="bossB">
-            <label>Boss: </label>
-            <select name="tier1" id="tier1">
-              <option value="Alolan Vulpix">Tier 1 - Alolan Vulpix</option>
-              <option value="Eevee">Tier 1 - Eevee</option>
-              <option value="Galarian Zigzagoon">Tier 1 - Galarian Zigzagoon</option>
-              <option value="Espurr">Tier 1 - Espurr</option>
 
-              <option value="Vaporeon">Tier 3 - Vaporeon</option>
-              <option value="Jolteon">Tier 3 - Jolteon</option>
-              <option value="Espeon">Tier 3 - Espeon</option>
-              <option value="Umbreon">Tier 3 - Umbreon</option>
-              <option value="Flareon">Tier 3 - Flareon</option>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">
+                Boss Escolhido:
+              </span>
+            </div>
+            <input type="text" class="form-control" id="bossN" name="bossN">
+          </div>
 
-              <option value="Yvetal">Tier 5 - Yvetal</option>
+        <select name="tier1" id="tier1" class="custom-select" size="3">
+          <option value="Alolan Vulpix">Tier 1 - Alolan Vulpix</option>
+          <option value="Eevee">Tier 1 - Eevee</option>
+          <option value="Galarian Zigzagoon">Tier 1 - Galarian Zigzagoon</option>
+          <option value="Espurr">Tier 1 - Espurr</option>
 
-              <option value="Mega Ampharos">Mega - Ampharos</option>
-              <option value="Mega Houndoom">Mega - Houndoom</option>
-              <option value="Mega Altaria">Mega - Altaria</option>
-            </select>
-            <input type="text" id="bossN" name="bossN" />
+          <option value="Vaporeon">Tier 3 - Vaporeon</option>
+          <option value="Jolteon">Tier 3 - Jolteon</option>
+          <option value="Espeon">Tier 3 - Espeon</option>
+          <option value="Umbreon">Tier 3 - Umbreon</option>
+          <option value="Flareon">Tier 3 - Flareon</option>
+
+          <option value="Yvetal" selected>Tier 5 - Yvetal</option>
+
+          <option value="Mega Ampharos">Mega - Ampharos</option>
+          <option value="Mega Houndoom">Mega - Houndoom</option>
+          <option value="Mega Altaria">Mega - Altaria</option>
+        </select>
+
+        <br><br>
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              Abre:
+            </span>
+          </div>
+          <input type="text" class="form-control" data-clocklet id="abreH" name="abreH">
+          <div class="input-group-append">
+            <span class="input-group-text">
+              horas
+            </span>
           </div>
         </div>
-        <div class="entradas">
-          <label>Abre:</label>
-          <input data-clocklet id="abreH" name="abreH" />
-          <label id="horas">horas</label>
+
+        <div class="input-group mb-3">
+          <div class="input-group-prepend">
+            <span class="input-group-text">
+              Bater:
+            </span>
+          </div>
+          <input type="text" class="form-control" data-clocklet id="bateH" name="bateH">
+          <div class="input-group-append">
+            <span class="input-group-text">
+              horas
+            </span>
+          </div>
         </div>
-        <div class="entradas">
-          <label>Bater: </label>
-          <input data-clocklet id="bateH" name="bateH" />
-          <label id="horas">horas</label>
-        </div>
-        <div class="radios">
-          <input type="radio" name="remoto" value="presencial" class="radio" id="presencial" />
-          <label for="remoto" class="radioLabel">
+
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-primary">
+            <input type="radio" name="remoto" id="prs" value="presencial">
             Presencial
           </label>
-        </div>
-        <div class="radios">
-          <input type="radio" name="remoto" value="remoto" class="radio" checked="checked" id="remoto" />
-          <label for="remoto" class="radioLabel">
+          </input>
+          <label class="btn btn-primary active">
+            <input type="radio" name="remoto" id="rmt" value="remoto" checked>
             Remoto
           </label>
-        </div>
+          </input>
+        </div><br><br>
         <div class="botao">
-          <input type="button" onClick="calc()" value="Copiar" class="button" />
+          <input type="button" onClick="calc()" value="Copiar" class="btn btn-dark" />
         </div>
         <input type="hidden" id="result" name="result" />
       </form>
@@ -145,7 +179,9 @@
   </div>
 
   <script>
-    $('#abreH').keyup(function () { $('#bateH').val(this.value) })
+
+
+    $('#abreH').change(function () { $('#bateH').val(this.value) });
     currentTime();
     sortList('listadeGym');
     sort('tier1');
@@ -158,14 +194,14 @@
     $(".dropdown dd ul li a").click(function () {
       var text = $(this).html();
       $(".dropdown dt a span").html(text);
-      console.log(text)
+
       $(".dropdown dd ul").hide();
       $("#result").val(getSelectedValue("sample"));
     });
 
     function getSelectedValue(id) {
       return $("#" + id).find("dt a span.values").html();
-      
+
     }
 
     $(document).bind('click', function (e) {
@@ -176,19 +212,19 @@
 
     $(".dropdown img.fotoGym").toggleClass("flagvisibility");
 
-    $("#tier1").change(function() {
-    $('#bossN').val($('option:selected').attr('value'));
+    $("#tier1").change(function () {
+      $('#bossN').val($('option:selected').attr('value'));
 
-    // $("#tier3").change(function() {
-    // $('#bossN').val($('option:selected').attr('value'));
+      // $("#tier3").change(function() {
+      // $('#bossN').val($('option:selected').attr('value'));
 
-    // $("#tier5").change(function() {
-    // $('#bossN').val($('option:selected').attr('value'));
+      // $("#tier5").change(function() {
+      // $('#bossN').val($('option:selected').attr('value'));
 
-    // $("#tierM").change(function() {
-    // $('#bossN').val($('option:selected').attr('value'));
+      // $("#tierM").change(function() {
+      // $('#bossN').val($('option:selected').attr('value'));
 
-}).change();
+    }).change();
 
   </script>
 
