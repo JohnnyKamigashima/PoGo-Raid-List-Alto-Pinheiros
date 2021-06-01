@@ -1,11 +1,12 @@
 function calc() {
-  var abre = document.getElementById('abreH').value
-  var bater = document.getElementById('bateH').value
-  var gym = document.getElementById('result').value
-  var boss = document.getElementById('bossN').value
-  var Minhascontas = document.getElementById('playerN').value
+  var abre = document.getElementById('abreH').value;
+  var bater = document.getElementById('bateH').value;
+  var gym = document.getElementById('result').value;
+ //var boss = document.getElementById('bossN').value;
+  var Minhascontas = document.getElementById('playerN').value;
   var remotos = document.querySelector("input[name='remoto']:checked");
-  console.log(remotos.value);
+  var boss = $('#bossN').val().split(';')[0];
+  var obs = $('#bossN').val().split(';')[1];
 
   var Listapresencial = document.getElementById('playerN').value
 
@@ -18,6 +19,9 @@ function calc() {
   var texto =
     '*RAID BOSS* ' +
     boss +
+    '\n' +
+    obs.substring(1) +
+    '\n' +
     '\n' +
     'Ginásio ' +
     gym +
@@ -65,9 +69,9 @@ function calc() {
   /* Get the text field */
   var copyText = texto
   //document.getElementById('result').innerHTML = texto
-  alert('Copiado!')
+  alert('Copiado! Cole a lista no seu grupo.')
   copyToClipboard(copyText)
-
+console.log(copyText);
   return false
 }
 
