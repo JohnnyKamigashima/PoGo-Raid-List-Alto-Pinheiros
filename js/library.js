@@ -83,6 +83,7 @@ function currentTimePlus10(elementid) {
   minutosTotal = horasEMinutos(now.getHours() + ":" + now.getMinutes()),
   mais10min = emHoras(minutosTotal + 10)
   ;
+  console.log(mais10min);ss
   document.getElementById(elementid).value = mais10min; // Adiciona horario atual no horario de abertura
 }
 
@@ -107,7 +108,7 @@ function copyToClipboard(text) {
 function raidAbriu(amudarEl,entradaEl) {
   let dataAtual = new Date(),
   dataAtualemMinutos = (Number(dataAtual.getHours()) * 60) + Number(dataAtual.getMinutes()),
-  fecha = 59 - Number(document.getElementById(entradaEl).value),
+  fecha = 59 - (Number(document.getElementById(entradaEl).value) < 60 ? Number(document.getElementById(entradaEl).value) : 59),
   fechaHora = dataAtualemMinutos - fecha
   ;
 document.getElementById(amudarEl).value = emHoras(fechaHora);

@@ -135,15 +135,15 @@
         </select>
 
         <br><br>
-       <div class="rows">
-         <div class="cols">
+
+
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">
                 Abre:
               </span>
             </div>
-            <input type="text" class="form-control" data-clocklet id="abreH" name="abreH" onchange="atualizaFecha('fechaH','abreH')"> 
+            <input type="text" class="form-control" data-clocklet id="abreH" name="abreH" > 
             <div class="input-group-append">
               <span class="input-group-text">
                 horas
@@ -151,22 +151,22 @@
             </div>
           </div>
        
-         </div>
-        <div class="cols">
+
+
           <div class="input-group mb-3">
             <div class="input-group-prepend">
               <span class="input-group-text">
                 Fecha:
               </span>
             </div>
-            <input type="text" class="form-control" id="fechaH" name="fechaH" placeholder="59" onchange="raidAbriu('abreH','fechaH')">
+            <input type="text" class="form-control" id="fechaH" name="fechaH" placeholder="59"  >
             <div class="input-group-append">
               <span class="input-group-text">
                 min
               </span>
             </div>
-          </div>
-        </div>
+
+
        </div>
         <div class="rows">
           <div class="input-group mb-3">
@@ -208,7 +208,15 @@
   <script>
 
 
-    $('#abreH').change(function () { $('#bateH').val(this.value) });
+    $('#abreH').change(function () { 
+        $('#bateH').val(this.value)
+        atualizaFecha('fechaH','abreH');
+      });
+
+      $('#fechaH').change(function () { 
+        raidAbriu('abreH','fechaH');
+      });
+
     currentTime('abreH');
     currentTimePlus10('bateH');
     sortList('listadeGym');
