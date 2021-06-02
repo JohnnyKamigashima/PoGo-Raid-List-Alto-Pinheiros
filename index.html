@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <link rel="stylesheet" href="./css/style.css" />
+
 <script src="./js/library.js"></script>
+
+
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 <!-- Latest compiled and minified CSS -->
@@ -132,33 +135,55 @@
         </select>
 
         <br><br>
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text">
-              Abre:
-            </span>
+       <div class="rows">
+         <div class="cols">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                Abre:
+              </span>
+            </div>
+            <input type="text" class="form-control" data-clocklet id="abreH" name="abreH" onchange="atualizaFecha('fechaH','abreH')"> 
+            <div class="input-group-append">
+              <span class="input-group-text">
+                horas
+              </span>
+            </div>
           </div>
-          <input type="text" class="form-control" data-clocklet id="abreH" name="abreH">
-          <div class="input-group-append">
-            <span class="input-group-text">
-              horas
-            </span>
+       
+         </div>
+        <div class="cols">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                Fecha:
+              </span>
+            </div>
+            <input type="text" class="form-control" id="fechaH" name="fechaH" placeholder="59" onchange="raidAbriu('abreH','fechaH')">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                min
+              </span>
+            </div>
           </div>
         </div>
-
-        <div class="input-group mb-3">
-          <div class="input-group-prepend">
-            <span class="input-group-text">
-              Bater:
-            </span>
-          </div>
-          <input type="text" class="form-control" data-clocklet id="bateH" name="bateH">
-          <div class="input-group-append">
-            <span class="input-group-text">
-              horas
-            </span>
+       </div>
+        <div class="rows">
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text">
+                Bater:
+              </span>
+            </div>
+            <input type="text" class="form-control" data-clocklet id="bateH" name="bateH">
+            <div class="input-group-append">
+              <span class="input-group-text">
+                horas
+              </span>
+            </div>
           </div>
         </div>
+        
 
         <div class="btn-group btn-group-toggle" data-toggle="buttons">
           <label class="btn btn-primary">
@@ -184,7 +209,8 @@
 
 
     $('#abreH').change(function () { $('#bateH').val(this.value) });
-    currentTime();
+    currentTime('abreH');
+    currentTimePlus10('bateH');
     sortList('listadeGym');
     sort('tier1');
 

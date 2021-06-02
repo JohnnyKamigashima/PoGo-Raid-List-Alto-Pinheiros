@@ -1,4 +1,7 @@
+
+
 function calc() {
+
   var abre = document.getElementById('abreH').value;
   var bater = document.getElementById('bateH').value;
   var gym = document.getElementById('result').value;
@@ -75,6 +78,19 @@ console.log(copyText);
   return false
 }
 
+function currentTimePlus10(elementid) {
+  var now = new Date(),
+  minutosTotal = horasEMinutos(now.getHours() + ":" + now.getMinutes()),
+  mais10min = emHoras(minutosTotal + 10)
+  ;
+  document.getElementById(elementid).value = mais10min; // Adiciona horario atual no horario de abertura
+}
+
+function currentTime(elementid) {
+  document.getElementById(elementid).value = (new Date()).getHours() + ":" + (new Date()).getMinutes();
+  
+}
+
 function copyToClipboard(text) {
   var dummy = document.createElement('textarea')
   // to avoid breaking orgain page when copying more words
@@ -88,29 +104,24 @@ function copyToClipboard(text) {
   document.body.removeChild(dummy)
 }
 
-function currentTime() {
-  var now = new Date()
-  var hora = Number(now.getHours())
-  var minuto = Number(now.getMinutes())
-
-  document.getElementById('abreH').value =
-    hora + ':' + ((minuto < 10 ? '0' : '') + minuto) // Adiciona horario atual no horario de abertura
-
-  if (minuto < 50) {
-    document.getElementById('bateH').value =
-      hora + ':' + ((minuto < 10 ? '0' : '') + (minuto + 10)) // Adiciona horario atual + 10 minutos}
-  } else {
-    if (String(minuto - 50).length < 2) {
-      document.getElementById('bateH').value =
-        hora + 1 + ':' + ((minuto < 10 ? '0' : '') + '0' + (minuto - 50)) // Adiciona horario atual + 10 minutos}
-    } else {
-      document.getElementById('bateH').value =
-        hora + 1 + ':' + ((minuto < 10 ? '0' : '') + (minuto - 50)) // Adiciona horario atual + 10 minutos}
-    }
-  }
-
-  return now
+function raidAbriu(amudarEl,entradaEl) {
+  let dataAtual = new Date(),
+  dataAtualemMinutos = (Number(dataAtual.getHours()) * 60) + Number(dataAtual.getMinutes()),
+  fecha = 59 - Number(document.getElementById(entradaEl).value),
+  fechaHora = dataAtualemMinutos - fecha
+  ;
+document.getElementById(amudarEl).value = emHoras(fechaHora);
 }
+
+function atualizaFecha(amudarEl,entradaEl) {
+document.getElementById(amudarEl).value = emHoras(Number(horasEMinutos(document.getElementById(entradaEl).value)+59));
+}
+
+function emHoras(horarioemminutos) { // input hours and minutes as int
+return (Math.trunc(horarioemminutos/60)+":" + (((horarioemminutos%60) < 10 ? '0' : ''))+(horarioemminutos%60));
+}
+
+
 
 
 function sort(elementid) {
@@ -172,4 +183,11 @@ function sortList(elementid) {
       switching = true;
     }
   }
+}
+
+function horasEMinutos(data) { //input must be str "HH:MM"
+  let minutos = Number(data.split(":")[1]) ,
+  horas = Number(data.split(":")[0]) * 60
+  ;
+  return horas+minutos;
 }
