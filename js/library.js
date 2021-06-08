@@ -45,23 +45,23 @@ function calc() {
     '1. ' +
     Minhascontas +
     '\n' +
-    '2.' +
+    '2. ' +
     '\n' +
-    '3.' +
+    '3. ' +
     '\n' +
-    '4.' +
+    '4. ' +
     '\n' +
-    '5.' +
+    '5. ' +
     '\n' +
-    '6.' +
+    '6. ' +
     '\n' +
-    '7.' +
+    '7. ' +
     '\n' +
-    '8.' +
+    '8. ' +
     '\n' +
-    '9.' +
+    '9. ' +
     '\n' +
-    '10.' +
+    '10. ' +
     '\n' +
     '\n' +
     '*PRESENCIAIS*:' +
@@ -72,9 +72,8 @@ function calc() {
   /* Get the text field */
   var copyText = texto
   //document.getElementById('result').innerHTML = texto
-  alert('Copiado! Cole a lista no seu grupo.')
-  copyToClipboard(copyText)
-console.log(copyText);
+  copyToClipboard(copyText);
+  alert('Copiado! Cole a lista no seu grupo.');
   return false
 }
 
@@ -83,7 +82,7 @@ function currentTimePlus10(elementid) {
   minutosTotal = horasEMinutos(now.getHours() + ":" + now.getMinutes()),
   mais10min = emHoras(minutosTotal + 10)
   ;
-  console.log(mais10min);ss
+
   document.getElementById(elementid).value = mais10min; // Adiciona horario atual no horario de abertura
 }
 
